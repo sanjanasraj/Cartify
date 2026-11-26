@@ -22,7 +22,14 @@ app.config.update(
 
 CORS(
     app,
-    resources={r"/api/*": {"origins": ["http://localhost:5173"]}},
+    resources={
+        r"/api/*": {
+            "origins": [
+                "http://localhost:5173",
+                "https://cartify-peach.vercel.app"
+            ]
+        }
+    },
     supports_credentials=True
 )
 
