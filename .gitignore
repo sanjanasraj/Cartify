@@ -15,3 +15,6 @@ dist/
 .DS_Store
 Thumbs.db
 "@ | Set-Content .gitignore
+# Database backups
+database_backup/
+*.sql
